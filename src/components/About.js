@@ -3,7 +3,7 @@ import Goals from "./Goals";
 
 function About() {
   return (
-    <div className="about">
+    <div className="about pages">
       <Goals />
     </div>
   );

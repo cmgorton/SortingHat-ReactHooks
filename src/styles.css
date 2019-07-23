@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Average&display=swap");
 .App {
   background: #a7a5a5;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 93, 0.3)
+    ),
+    url("/src/assets/hogwarts-hall.jpg");
+  background-size: cover;
   font-family: "Average", serif;
   text-align: center;
   width: 100vw;
@@ -15,6 +22,10 @@
 }
 .App h2 {
   max-width: 250px;
+}
+.pages {
+  width: 100vw;
+  height: 100vh;
 }
 .sorting {
   max-width: 200px;

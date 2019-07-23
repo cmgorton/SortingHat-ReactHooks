@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Sorting() {
   return (
-    <div className="Sorting">
+    <div className="Sorting pages">
       <Card />
     </div>
   );
