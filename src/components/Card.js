@@ -3,7 +3,8 @@ import axios from "axios";
 import SortingHatSvg from "./SortingHatSvg";
 
 export default function Card() {
-  const [hHouse, setHouse] = useState([]);
+  const [hHouse, setHouse] = useState("");
+  // NOTE: The value given to setState() must be of the same type as your value is expected to be
   // const houseColors = {
   //   red: "#740001",
   //   blue: "#222f5b",
@@ -24,6 +25,7 @@ export default function Card() {
   } else {
     styles.color = "#2A623D";
   }
+
   useEffect(() => {
     axios
       .get(`https://www.potterapi.com/v1/sortinghat`, {

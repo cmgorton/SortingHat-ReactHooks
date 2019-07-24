@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Home from "./Home";
-import About from "./About";
+import Character from "./Character";
 import Sorting from "./Sorting";
+import Spells from "./Spells";
 
 function AppRouter() {
   return (
@@ -14,17 +15,21 @@ function AppRouter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about">About</Link>
+              <Link to="/character">Character</Link>
             </li>
             <li>
               <Link to="/sorting">Sorting</Link>
+            </li>
+            <li>
+              <Link to="/spells">Spells</Link>
             </li>
           </ul>
         </nav>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/about" component={About} />
+          <Route path="/character" component={Character} />
           <Route path="/sorting" component={Sorting} />
+          <Route path="/spells" component={Spells} />
         </Switch>
       </div>
     </Router>

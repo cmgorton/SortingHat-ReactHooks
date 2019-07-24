@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SortingHatSvg() {
   return (
-    <svg viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+    <svg className="hat" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
       <text
         fontFamily="MyriadPro-Regular, Myriad Pro"
         fontSize="9"

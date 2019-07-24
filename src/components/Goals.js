@@ -18,7 +18,7 @@ export default function SortingHatSvg() {
             ry="118.009"
             fill="none"
             stroke="#c9aa60"
-            stroke-width="24"
+            strokeWidth="24"
           />
           <ellipse
             cx="645.468"
