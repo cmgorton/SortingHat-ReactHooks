@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap");
+
 body {
   overflow-x: hidden;
   background-color: #be9c38;
@@ -7,6 +8,8 @@ body {
   background-repeat: repeat;
 }
 #root {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
   font-size: 20px;
   width: 100vw;
   height: 100vh;
@@ -60,6 +63,7 @@ button:hover {
   width: 100vw;
   background: #4e534a;
 }
+
 .main-nav ul {
   font-family: cursive;
   display: flex;
@@ -173,3 +177,4 @@ button:hover {
     width: 200px;
   }
 }
+
