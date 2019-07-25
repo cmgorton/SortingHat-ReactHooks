@@ -20,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="pages">
-      <h1 className="center">Welcome Wizards</h1>
+      <h1 className="center home-title">Welcome Wizards</h1>
       <h2 className="center">Our Four Noble Houses are:</h2>
       <div className="home">
         {houses.map(houses => {
@@ -30,6 +30,13 @@ export default function Home() {
               <p className="capital home-para">
                 Your Head of house is: {houses.headOfHouse}{" "}
               </p>
+
+              <p> House Colors are:</p>
+              <ul className="values capital">
+                <li>{houses.colors[0]}</li>
+                <li>{houses.colors[1]}</li>
+              </ul>
+
               <p className="capital home-para">
                 House Colors are:
                 <ul className="values">
