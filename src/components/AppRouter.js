@@ -15,10 +15,10 @@ function AppRouter() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/character">Character</Link>
+              <Link to="/sorting">Sorting</Link>
             </li>
             <li>
-              <Link to="/sorting">Sorting</Link>
+              <Link to="/character">Character</Link>
             </li>
             <li>
               <Link to="/spells">Spells</Link>
@@ -27,8 +27,8 @@ function AppRouter() {
         </nav>
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/character" component={Character} />
           <Route path="/sorting" component={Sorting} />
+          <Route path="/character" component={Character} />
           <Route path="/spells" component={Spells} />
         </Switch>
       </div>
