@@ -30,7 +30,7 @@ export default function Characters() {
       })
       .then(response => {
         const data = response.data;
-        console.log("harry potter spells", data);
+        console.log("harry potter characters", data);
         setData(data);
       });
   }, []);
@@ -46,11 +46,11 @@ export default function Characters() {
               </span>
               {data.name}
             </h2>
-            <h3>Role: {data.role}</h3>
-            <h3>House: {data.house}</h3>
-            <h3>Wand: {data.wand}</h3>
-            <h3>Patronus: {data.patronus}</h3>
-            <h3>Blood Status {data.bloodStatus}</h3>
+            <h3 className="capital">Role: {data.role}</h3>
+            <h3 className="capital">House: {data.house}</h3>
+            <h3 className="capital">Wand: {data.wand}</h3>
+            <h3 className="capital">Patronus: {data.patronus}</h3>
+            <h3 className="capital">Blood Status: {data.bloodStatus}</h3>
           </div>
         );
       })}
