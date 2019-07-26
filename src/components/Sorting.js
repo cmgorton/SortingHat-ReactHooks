@@ -17,7 +17,7 @@ export default function Sorting() {
   };
 
   if (hHouse === "Hufflepuff") {
-    styles.color = "#726255";
+    styles.color = "#ecb939";
   } else if (hHouse === "Ravenclaw") {
     styles.color = "#222f5b";
   } else if (hHouse === "Gryffindor") {
@@ -57,6 +57,7 @@ export default function Sorting() {
         ) : (
           <p className="loader"> Hmm, difficult. VERY difficult. </p>
         )}
+
       </div>
     </div>
   );

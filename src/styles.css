@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap");
+
 body {
   overflow-x: hidden;
   background-color: #be9c38;
@@ -11,7 +12,10 @@ body {
   height: 100vh;
   color: white;
   margin: 0;
-}
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 20px;
+  
 .center {
   text-align: center;
 }
