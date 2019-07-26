@@ -46,7 +46,7 @@ export default function Spell() {
               </span>
               {spell.spell}
             </h2>
-            <h3>{spell.type}</h3>
+            <h3>Type of Spell: {spell.type}</h3>
             <h3 className="capital">{spell.effect}</h3>
           </div>
         );

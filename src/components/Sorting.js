@@ -3,9 +3,7 @@ import axios from "axios";
 import SortingHatSvg from "./SortingHatSvg";
 
 export default function Sorting() {
-
   const [hHouse, setHouse] = useState("...");
-
   // NOTE: The value given to setState() must be of the same type as your value is expected to be
   // const houseColors = {
   //   red: "#740001",
@@ -20,7 +18,6 @@ export default function Sorting() {
 
   if (hHouse === "Hufflepuff") {
     styles.color = "#ecb939";
-
   } else if (hHouse === "Ravenclaw") {
     styles.color = "#222f5b";
   } else if (hHouse === "Gryffindor") {
@@ -45,6 +42,11 @@ export default function Sorting() {
 
   return (
     <div className="card">
+      <h2>
+        Don't Be Shy.
+        <br />
+        Step on up to be sorted.
+      </h2>
       <SortingHatSvg />
       <button onClick={() => setHouse()}>Which house?</button>
       <div className="house-card">
@@ -53,8 +55,9 @@ export default function Sorting() {
             It's going to be <span style={styles}>{hHouse}!</span>
           </p>
         ) : (
-            <p className="loader"> Hum I see... </p>
-          )}
+          <p className="loader"> Hmm, difficult. VERY difficult. </p>
+        )}
+
       </div>
     </div>
   );

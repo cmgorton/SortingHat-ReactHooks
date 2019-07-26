@@ -30,29 +30,19 @@ export default function Home() {
               <p className="capital home-para">
                 Your Head of house is: {houses.headOfHouse}{" "}
               </p>
-
               <p> House Colors are:</p>
               <ul className="values capital">
                 <li>{houses.colors[0]}</li>
                 <li>{houses.colors[1]}</li>
               </ul>
+              <p className="capital home-para">Your House Values:</p>
+              <ul className="values">
+                <li>{houses.values[0]}</li>
+                <li>{houses.values[1]}</li>
+                <li>{houses.values[2]}</li>
+                <li>{houses.values[3]}</li>
+              </ul>
 
-              <p className="capital home-para">
-                House Colors are:
-                <ul className="values">
-                  <li>{houses.colors[0]}</li>
-                  <li>{houses.colors[1]}</li>
-                </ul>
-              </p>
-              <p className="capital home-para">
-                House Your house is known for:
-                <ul className="values">
-                  <li>{houses.values[0]}</li>
-                  <li>{houses.values[1]}</li>
-                  <li>{houses.values[2]}</li>
-                  <li>{houses.values[3]}</li>
-                </ul>
-              </p>
               <p className="capital home-para">
                 House Mascot is: {houses.mascot}
               </p>
